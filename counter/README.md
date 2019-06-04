@@ -21,6 +21,16 @@ Run a `dgraph increment` counter per Dgraph Alpha.
     dgraph increment --addr localhost:9082 --num=1000 --wait=1s | tee a2.log
     dgraph increment --addr localhost:9083 --num=1000 --wait=1s | tee a3.log
 
+### Restarting Alphas
+
+Try stopping an Alpha while the counter tool is running. As long as the majority
+of the Alpha group is up, the other running counters can continue making
+progress.
+
+    docker-compose stop alpha1
+
+See the other two counters continue running normally. After some time, start alpha1. The counter that it sees once it has re-joined the cluster is the **latest** value of the entire cluster. This shows that Dgraph guarantees linearizable reads.
+
 ### Verify
 
 Check that the total number of counters matches the sequence from 1 to 3000.
