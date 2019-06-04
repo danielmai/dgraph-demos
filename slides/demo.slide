@@ -1,0 +1,29 @@
+Dgraph Demo
+
+Dgraph Labs
+https://dgraph.io
+
+* Public Dgraph Playground
+
+.link https://play.dgraph.io https://play.dgraph.io
+
+* All movies directed by Steven Spielberg.
+
+.play q_movies.go /start q/,/end q/
+
+* Steven Spielberg’s movies where he also had a cameo appearance.
+
+.play q_cameo.go /start q/,/end q/
+
+* Score each Steven Spielberg movie based on the age of the movie.
+
+.play q_age.go /start q/,/end q/
+
+* First 10 movies for genres with more than 30,000 films.
+
+.play q_genres.go /start q /,/end q/
+
+* Steven Spielberg’s movie total genre counts and average genres per movie.
+
+.play q_counts.go /start q/,/end q/
+
