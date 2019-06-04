@@ -1,0 +1,1 @@
+dgraph alpha --lru_mb=1024 -z localhost:5080
