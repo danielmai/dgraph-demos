@@ -6,12 +6,12 @@ Dgraph demo to transactionality with an incrementing counter.
 
 This runs 3 Dgraph Alphas and 1 Dgraph Zero with the following port configuration:
 
-|        | gRPC-internal | gRPC-external | HTTP-external |
-|--------|---------------|---------------|---------------|
-| alpha1 | 7080          | 9080          | 8080          |
-| alpha2 | 7082          | 9082          | 8082          |
-| alpha3 | 7083          | 9083          | 8083          |
-| zero1  | 5080          | -             | 6080          |
+|        | `--port_offset` | gRPC-internal | HTTP-external | gRPC-external |
+|--------|-----------------|---------------|---------------|---------------|
+| alpha1 | 0               | 7080          | 8080          | 9080          |
+| alpha2 | 2               | 7082          | 8082          | 9082          |
+| alpha3 | 3               | 7083          | 8083          | 9083          |
+| zero1  | 0               | 5080          | 6080          | -             |
 
 ### Run counters
 
