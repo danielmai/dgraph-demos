@@ -18,12 +18,12 @@ var q = `
       p as count(starring)
       q as count(genre)
       date as initial_release_date
-      years as math(since(date)/(365*24*60*60)) // HL
+      years as math(since(date)/(365*24*60*60))
       score as math(cond(years > 10, 0, ln(p)+q-ln(years)))
     }
   }
 
-  TopMovies(func: uid(films), orderdesc: val(score)) @filter(gt(val(score), 2)){ // HL
+  TopMovies(func: uid(films), orderdesc: val(score)) @filter(gt(val(score), 2)) {
     name@en
     val(score)
     val(date)
