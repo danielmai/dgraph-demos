@@ -1,4 +1,7 @@
-Dgraph demo to transactionality with an incrementing counter.
+Dgraph demo of transactions with an incrementing counter.
+
+* Increment a counter transactionally
+* Observe correctness, even when servers are getting killed and restarted.
 
 ### Run cluster
 
