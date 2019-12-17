@@ -1,0 +1,5 @@
+#!/bin/bash
+./runzero &
+./runbulk
+mv out/0/p .
+./runalpha
