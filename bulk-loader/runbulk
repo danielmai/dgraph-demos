@@ -1,1 +1,1 @@
-dgraph bulk -r ./data/21million.rdf.gz -s ./data/21million.schema -z localhost:5080
+dgraph bulk -f ./data/21million.rdf.gz -s ./data/21million.schema -z localhost:5080
