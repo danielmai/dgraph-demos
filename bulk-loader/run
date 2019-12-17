@@ -1,4 +1,6 @@
 #!/bin/bash
+
+(cd data; ./fetchdata.sh)
 ./runzero &
 ./runbulk
 mv out/0/p .
