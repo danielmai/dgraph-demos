@@ -11,21 +11,33 @@ https://dgraph.io
 
 * All movies directed by Steven Spielberg.
 
-.code q_movies.go /start q/,/end q/
+.code movies.q
 
 * Steven Spielberg’s movies where he also had a cameo appearance.
 
-.code q_cameo.go /start q/,/end q/
+.code cameo.q
+
+* Angelina Jolie movies ordered by genre.
+
+.code varblock.q
+
+* Count movies per genre.
+
+.code groupby.q
+
+* Variable propogation: Number of characters played by Warwick Davis per film.
+
+.code variablepropogation.q
 
 * Score each Steven Spielberg movie based on the age of the movie.
 
-.code q_age.go /start q/,/end q/
+.code age.q
 
 * First 10 movies for genres with more than 30,000 films.
 
-.code q_genres.go /start q /,/end q/
+.code genres.q
 
 * Steven Spielberg’s movie total genre counts and average genres per movie.
 
-.code q_counts.go /start q/,/end q/
+.code counts.q
 
