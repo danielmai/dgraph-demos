@@ -1,0 +1,20 @@
+# Shortest path between Steven Spielberg and Tom Hanks
+{
+  u as a(func: allofterms(name@en, "steven spielberg")) {
+    name@en
+  }
+
+  v as th(func: allofterms(name@en, "tom hanks")) {
+    name@en
+  }
+
+  paths as shortest(from: uid(u), to: uid(v)) {
+    director.film
+    starring
+    performance.actor
+  }
+
+  paths(func: uid(paths)) {
+    name@en
+  }
+}
