@@ -1,16 +1,19 @@
-.PHONY: up ps down clean load data-info schema-info ui
+.PHONY: up down ps logs clean load data-info schema-info ui
 
 up:
 	docker-compose up --detach
 
-ps:
-	docker-compose ps
-
 down:
 	docker-compose down
 
+ps:
+	docker-compose ps
+
+logs:
+	docker-compose logs -f
+
 clean:
-	sudo rm -rf ./data/*
+	rm -rf ./data/*
 
 load:
 	./live.sh
