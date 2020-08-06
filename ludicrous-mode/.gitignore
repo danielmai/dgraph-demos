@@ -1,0 +1,4 @@
+/datasets/*.rdf.gz
+/datasets/*.schema
+/secrets/acl-secret
+/secrets/enc-secret
