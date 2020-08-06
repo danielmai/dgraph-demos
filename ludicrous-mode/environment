@@ -1,4 +1,4 @@
-export DGRAPH_LIVE_TLS_CACERT=$HOME/certs/ca.crt
+export DGRAPH_LIVE_TLS_CACERT=./certs/ca.crt
 export DGRAPH_LIVE_ALPHA=localhost:9080
 export DGRAPH_LIVE_ZERO=localhost:5080
 export DGRAPH_LIVE_USER=groot

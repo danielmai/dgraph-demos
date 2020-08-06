@@ -1,3 +1,5 @@
+/certs/*.crt
+/certs/*.key
 /datasets/*.rdf.gz
 /datasets/*.schema
 /secrets/acl-secret
