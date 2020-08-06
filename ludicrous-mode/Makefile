@@ -1,16 +1,18 @@
 .PHONY: up down ps logs clean load data-info schema-info ui
 
+PROJECT = dgraph
+
 up:
-	docker-compose up --detach
+	docker-compose -p $(PROJECT) up --detach
 
 down:
-	docker-compose down
+	docker-compose -p $(PROJECT) down
 
 ps:
-	docker-compose ps
+	docker-compose -p $(PROJECT) ps
 
 logs:
-	docker-compose logs -f
+	docker-compose -p $(PROJECT) logs -f
 
 clean:
 	rm -rf ./data/*
